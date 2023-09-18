@@ -1,0 +1,101 @@
+html body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(185, 185, 255);
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    width: 100vw;
+    margin: -10px;
+    margin-right: -20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+hr {
+    width: 100%;
+    border-style: solid;
+}
+#log {
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    margin-left: 500px;
+    min-width: 100px;
+}
+
+#main-grid {
+    display: grid;
+    
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#add {
+    width: 80px;
+}
+
+.form {
+    border-style: none;
+    margin-top: 50px;
+
+}
+.modal-content {
+    width: 400px;
+    height: 300px;
+    border: none;
+    background-color: #ffe3e3;
+    margin: 15% auto;
+    padding: 10px;
+}
+
+.modal-input {
+    padding-top: 5px;
+    margin-top: 10px;
+    background-color: #fcf1f1;
+    border-style: solid;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#submit-button {
+    margin-top: 20px;
+    width: 80px;
+}
+
+.close {
+    color:#aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#card-grid {
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr) 3fr;
+}
