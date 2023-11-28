@@ -1,6 +1,8 @@
 html body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(185, 185, 255);
+    height: auto;
+
 }
 
 #head {
@@ -19,22 +21,8 @@ h1 {
     margin: 10px;
 }
 
-hr {
-    width: 100%;
-    border-style: solid;
-}
-#log {
-    width: 100px;
-    height: 50px;
-    font-size: large;
-    margin-left: 500px;
-    min-width: 100px;
-}
 
-#main-grid {
-    display: grid;
-    
-}
+/*Modal*/
 
 #modal {
     display: none;
@@ -49,22 +37,10 @@ hr {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#add {
-    width: 80px;
-}
-
 .form {
     border-style: none;
     margin-top: 50px;
 
-}
-.modal-content {
-    width: 400px;
-    height: 300px;
-    border: none;
-    background-color: #ffe3e3;
-    margin: 15% auto;
-    padding: 10px;
 }
 
 .modal-input {
@@ -75,6 +51,39 @@ hr {
     width: 200px;
     margin-right: 10px;
 }
+
+
+.modal-content {
+    width: 400px;
+    height: 300px;
+    border: none;
+    background-color: #ffe3e3;
+    margin: 15% auto;
+    padding: 10px;
+}
+
+
+hr {
+    width: 100%;
+    border-style: solid;
+}
+
+
+#log {
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    margin-left: 500px;
+    min-width: 100px;
+}
+
+
+
+
+#add {
+    width: 80px;
+}
+
 
 #submit-button {
     margin-top: 20px;
@@ -97,5 +106,24 @@ hr {
 
 #card-grid {
     display: grid;
-    grid-template-columns: minmax(400px, 1fr) 3fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    min-width: 1300px;
+}
+
+/* .libBook {
+    width: 400px;
+    height: 400px;
+} */
+
+.library {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    background-color: #ffffff;
+    border: solid;
+    margin-top: 5px;
+    max-width: 300px;
+    
+    max-height: 400px;
 }
